@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #fcf1e0;
+  overflow-x: hidden;
+}
+
+.contacts {
+  width: 100%;
+  height: 110vh;
+  background-image: url(../images/лаванда.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.contacts_container-info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts_container-title-text {
+  padding: 5px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contacts_container-info-left-quote {
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contacts_container-info-left-text {
+  padding: 10px;
+  margin: 0 100px;
+  border: 1px solid white;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+}
+
+.contacts_container-info-left p {
+  padding: 5px;
+  margin: 5px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 3px 3px 16px 1px rgba(0, 0, 0, 0.6);
+}
+
+.subscription_text {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.subscription_text h2 {
+  padding: 10px 10px;
+  margin-bottom: 50px;
+  color: #db5c01;
+  font-size: 40px;
+}
+
+.subscription_text p {
+  padding: 10px;
+  margin: 50px 5px;
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 200px;
+  height: 50px;
+  padding: 5px 5px;
+  margin: 5px 10px 25px 10px;
+  border: none;
+  border-bottom: 2px solid #db5c01;
+  background-color: #fcf1e0;
+  font-size: 18px;
+  outline: none;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.subscription_form {
+  text-align: center;
+}
+
+.subscription_form .button {
+  display: inline;
+}
+
+@media (max-width: 992px) {
+
+  input[type="text"],
+  input[type="tel"] {
+    width: 90%;
+    display: block;
+  }
+
+  .contacts_container-info-right {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts_container-info-left h1 {
+    font-size: 30px;
+  }
+
+  .contacts_container-info-left p {
+    font-size: 18px;
+  }
+}
